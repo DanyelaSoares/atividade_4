@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="img\logo.png" alt="Logo da Empresa">
+        <nav>
+            <ul>
+                <li><h1><a href="index.html">Home</a></h1></li>
+                <li><h1><a href="sobre.html">Sobre</a></h1></li>
+                <li><h1><a href="servicos.html">Serviços</a></h1></li>
+                <li><h1><a href="testemunhos.html">Testemunhos</a></h1></li>
+                <li><h1><a href="contato.html">Contato</a></h1></li>
+                
+            </ul>
+        </nav>
+        <a href="contato.html" class="cta-button">Entre em Contato</a>
+    </header>
+
+
+
+
+
+
+    <footer>
+        <p>Siga-nos nas redes sociais:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://web.whatsapp.com" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Café com gatos. Todos os direitos reservados.</p>
+        <p><a href="/termos.html">Termos de Uso</a> | <a href="/politica.html">Política de Privacidade</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
