@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/whimsical.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima do corpo */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.banner {
+    height: 400px;
+    padding-bottom: 20px; /* Adiciona espaço na parte inferior */
+}
+
+#sobre, #servicos, #testemunhos, #contato {
+    padding: 50px;
+    text-align: center;
+}
+
+.servicos-container, .testemunhos-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    color: #ffffff; /* Cor do texto do footer */
+    background-color: #333333; /* Cor de fundo do footer */
+    text-align: center;
+    padding: 20px; /* Espaçamento interno do footer */
+    margin-top: auto; /* Faz o footer se empurrar para o final da página */
+}
+
+footer a {
+    color: #ff0000; /* Cor do link "Termos de Uso" */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+footer a:hover {
+    color: #00ff00; /* Cor do link ao passar o mouse */
+}
+
+/* CARROSSEL */
+.swiper-slide {
+    display: flex; /* Habilita o uso do flexbox */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    color: white;
+}
+
+.swiper-slide img {
+    width: 8%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.swiper-slide h1 {
+    font-size: 24px; 
+}
+
+.swiper-slide p {
+    font-size: 16px; 
+}
+
+h2 {
+    margin-top: 5px; 
+}
+
+h1 {
+    margin-bottom: 5px; 
+}
+
+h2 {
+    margin-bottom: 5px; 
+}
+
+h1 {
+    margin-top: 5px; 
+}
+
+.carrossel-titulo {
+    color: white; 
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.7), 
+        0 0 25px rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+/* FORMULÁRIO CONTATO */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px; /* Definindo uma largura máxima */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Ajuste a largura do formulário (80% do container pai) */
+    max-width: 600px; /* Define uma largura máxima */
+    margin: 20px auto; /* Centraliza o formulário e adiciona margens em cima e embaixo */
+    padding: 20px; /* Adiciona espaço interno ao redor do conteúdo do formulário */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para profundidade */
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Responsividade - Media Queries */
+/* Estilos para tablets (telas menores que 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .cta-button {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicos-container, .testemunhos-container {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para smartphones (telas menores que 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .swiper-slide img {
+        width: 20%;
+    }
+}

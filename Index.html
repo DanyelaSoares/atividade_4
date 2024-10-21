@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página da Empresa</title>
+    <!-- Estilos e Bibliotecas externas -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header com CTA -->
+    <header>
+        <img src="img\logo.png" alt="Logo da Empresa">
+        <nav>
+            <ul>
+                <li><h1><a href="index.html">Home</a></h1></li>
+                <li><h1><a href="sobre.html">Sobre</a></h1></li>
+                <li><h1><a href="servicos.html">Serviços</a></h1></li>
+                <li><h1><a href="testemunhos.html">Testemunhos</a></h1></li>
+                <li><h1><a href="contato.html">Contato</a></h1></li>
+                
+            </ul>
+        </nav>
+        <a href="contato.html" class="cta-button">Entre em Contato</a>
+    </header>
+
+    <section class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/cafe.jpg" alt="serviços:">
+                    <h2 class="carrossel-titulo">SERVIÇOS OFERECIDOS:</h2>
+                    <h1 class="carrossel-titulo">Café, chás, doces e salgados</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/adocao.avif" alt="espaço">
+                    <h2 class="carrossel-titulo">ADOÇÃO</h2>
+                    <h1 class="carrossel-titulo">Escolha um de nossos gatinhos e lhe dê um lar!!</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/lojinha.png" alt="loja">
+                    <h2 class="carrossel-titulo">LOJINHA</h2>
+                    <h1 class="carrossel-titulo">Roupas, acessórios, alimentação e brinquedos para seu gatinho!</h1>
+                </div>
+            </div>
+            <!-- Paginação e botões de navegação dentro do swiper-container -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+
+    <!-- Footer -->
+    <footer>
+        <p>Siga-nos nas redes sociais:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://web.whatsapp.com" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Café com gatos. Todos os direitos reservados.</p>
+        <p><a href="/termos.html">Termos de Uso</a> | <a href="/politica.html">Política de Privacidade</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
